@@ -12,9 +12,19 @@ func main() {
 		"jihad": "cabe",
 	}
 
+	colorsMap := map[string]string{
+		"AliceBlue":    "#F0F8FF",
+		"AntiqueWhite": "#FAEBD7",
+		"Aqua":         "#00FFFF",
+		"Aquamarine":   "#7FFFD4",
+		// NB: Go requires this trailing comma on the last element when initializing values over multiple lines
+		"Azure": "#F0FFFF",
+	}
+	colorsSlice := colorsMap["AliceBlue"]
+
+	fmt.Println("Inilah hasilnya : ", colorsSlice)
 	// var a map[string]string = tampung(barang)
 	// fmt.Println(a)
-	helloy()
 	var gg, dd = tampung(barang, "mantap jiwa", "mantap mantap", "mantap")
 	fmt.Println(gg)
 	fmt.Println(dd)
